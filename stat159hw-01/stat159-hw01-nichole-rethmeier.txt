@@ -1,0 +1,26 @@
+    1  mkdir stat159hw-01
+    2  cd stat159hw-01
+    3  curl -O http://textfiles.com/food/bread.txt -O http://textfiles.com/food/btaco.txt -O http://textfiles.com/food/1st_aid.txt -O http://textfiles.com/food/beesherb.txt
+    4  curl -O http://archive.ics.uci.edu/ml/machine-learning-databases/forest-fires/forestfires.csv -O http://www.math.uah.edu/stat/data/Fisher.csv -O http://web.pdx.edu/~gerbing/data/cars.csv
+    5  pwd
+    6  ls
+    7  ls -f -l
+    8  mkdir data
+    9  cd data
+   10  mkdir txt-files
+   11  mkdir csv-files
+   12  mv /Users/nrethmeier/Documents/stat159/stat159hw-01/*.txt /Users/nrethmeier/Documents/stat159/stat159hw-01/data/txt-files
+   13  mv /Users/nrethmeier/Documents/stat159/stat159hw-01/*.csv /Users/nrethmeier/Documents/stat159/stat159hw-01/data/csv-files
+   14  cd ..
+   15  mkdir copies
+   16  cp /Users/nrethmeier/Documents/stat159/stat159hw-01/data/txt-files/* /Users/nrethmeier/Documents/stat159/stat159hw-01/copies
+   17  cp /Users/nrethmeier/Documents/stat159/stat159hw-01/data/csv-files/* /Users/nrethmeier/Documents/stat159/stat159hw-01/copies
+   18  cd copies
+   19  mv Fisher.csv iris.csv
+   20  mv bread.txt bread-recipe.txt
+   21  cd ..
+   22  mv copies copy-files
+   23  rm -rf copy-files
+   24  cd data/txt-files
+   25  ls -r
+   26  history > stat159-hw01-nichole-rethmeier.txt
